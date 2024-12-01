@@ -3,10 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legend.com.kh</title>
+    <title>Header Example</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div></div>
+    <header class="header">
+        <div class="header-left">
+            <input type="text" placeholder="Search Movies..." class="search-bar">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+        </div>
+    <div class="header-center">
+        <img src="./img/logo-removebg-preview.png" alt="Legend Cinema" class="logo">
+    </div>
+    <div class="header-right">
+        <button class="btn ticket-btn">
+            <img src="./img/ticket-Photoroom.png" alt="ticket" class="ticket">Ticket</button>
+        <button class="btn join-btn"> 
+            <img src="./img/user1-removebg-preview.png" alt="join" class="join"> Join Now</button>
+        <button class="btn notification-btn">
+            <img src="./img/image_2024-12-01_230020441-removebg-preview.png" class="notifiction"></button>
+        <div class="language-switcher">
+            <img src="./img/flage-removebg-preview.png" alt="Language" class="flag-icon">
+            <form>
+                <select id="Language">
+                    <option value="EN">EN</option>
+                    <option value="KH">Khmer</option>
+                    <option value="Ch">中国人</option>
+                </select>
+            </form>
+        </div>
+    </div>
+</header>
+  <nav class="navbar">
+    <a href="#" class="nav-link active">
+        <i class="fa-solid fa-house" style="color: #fafafa;"></i>Home</a>
+    <a href="#" class="nav-link">
+        <i class="fa-solid fa-location-dot"></i>Cinemas</a>
+    <a href="#" class="nav-link">
+        <i class="fa-solid fa-tag fa-flip-horizontal" style="color: #ffffff;"></i>Offers</a>
+    <a href="#" class="nav-link">
+        <img src="./img/food_15026881.png" style="color:white"> F&B</a>
+    <div class="dropdown">
+      <span>📍 All Cinemas ▼</span>
+    </div>
+  </nav>
 </body>
 </html>
