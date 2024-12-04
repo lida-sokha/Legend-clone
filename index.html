@@ -9,12 +9,13 @@
 </head>
 <body>
     <header class="header">
+        <div class="container">
         <div class="header-left">
             <input type="text" placeholder="Search Movies..." class="search-bar">
             <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
         </div>
     <div class="header-center">
-        <img src="./img/logo-removebg-preview.png" alt="Legend Cinema" class="logo">
+        <img src="./img/logo-removebg-preview.png" alt="logo" class="logo">
     </div>
     <div class="header-right">
         <button class="btn ticket-btn">
@@ -23,30 +24,65 @@
             <img src="./img/user1-removebg-preview.png" alt="join" class="join"> Join Now</button>
         <button class="btn notification-btn">
             <img src="./img/image_2024-12-01_230020441-removebg-preview.png" class="notifiction"></button>
-        <div class="language-switcher">
-            <img src="./img/flage-removebg-preview.png" alt="Language" class="flag-icon">
+            <div class="language-switcher">
+                <div class="custom-dropdown">
+                    <div class="dropdown-selected">
+                        <img src="./img/flage-b.png" alt="EN Flag" class="icon">
+                        EN
+                    </div>
+                    <ul class="dropdown-options">
+                        <li data-value="EN">
+                            <img src="./img/flage-b.png" alt="EN Flag" class="icon" span="EN">
+                            English
+                        </li>
+                        <li data-value="KH">
+                            <img src="./img/khmer-flage.png" alt="Khmer Flag" class="icon" span="KH">
+                            Khmer
+                        </li>
+                        <li data-value="Ch">
+                            <img src="./img/c-removebg-preview.png" alt="China Flag" class="icon" span="CH">
+                            中国人
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+    </div>
+    </div>
+</header>
+<div class="container-1">
+    <nav class="navbar">
+        <a href="#" class="nav-link active">
+            <i class="fa-solid fa-house" style="color: #fafafa;"></i>Home</a>
+        <a href="#" class="nav-link">
+            <i class="fa-solid fa-location-dot"></i>Cinemas</a>
+        <a href="#" class="nav-link">
+            <i class="fa-solid fa-tag fa-flip-horizontal" style="color: #ffffff;"></i>Offers</a>
+        <a href="#" class="nav-link">
+            <img src="./img/pop-corn (1).png"> F&B</a>
+        <div class="dropdown">
             <form>
-                <select id="Language">
-                    <option value="EN">EN</option>
-                    <option value="KH">Khmer</option>
-                    <option value="Ch">中国人</option>
+                <select id="location">
+                    <option value="Cinema">
+            <i class="fa-solid fa-location-dot" style="color: red;"></i>
+            All cinemas</option>
+                    <option value="271">Legend Cinema 271 Mega Mall</option>
+                    <option value="Sihanouk">Legend cinema Sihanoukville</option>
+                    <option value="eden">Legend Eden Garden</option>
+                    <option value="k-mall">Legend K Mall</option>
+                    <option value="meanchey">Legend Meanchey</option>
+                    <option value="midtown">Legend Midtown Mall</option>
+                    <option value="noro">Legend Noro Mall</option>
+                    <option value="olympic">Legend Olympic</option>
+                    <option value="exchange">Legend Premium Exchange Square</option>
+                    <option value="sensok">Legend SenSok</option>
+                    <option value="siemreap">Legend Siem Reap</option>
+                    <option value="Toul-Kork">Legend Toul K</option>
                 </select>
             </form>
         </div>
-    </div>
-</header>
-  <nav class="navbar">
-    <a href="#" class="nav-link active">
-        <i class="fa-solid fa-house" style="color: #fafafa;"></i>Home</a>
-    <a href="#" class="nav-link">
-        <i class="fa-solid fa-location-dot"></i>Cinemas</a>
-    <a href="#" class="nav-link">
-        <i class="fa-solid fa-tag fa-flip-horizontal" style="color: #ffffff;"></i>Offers</a>
-    <a href="#" class="nav-link">
-        <img src="./img/food_15026881.png" style="color:white"> F&B</a>
-    <div class="dropdown">
-      <span>📍 All Cinemas ▼</span>
-    </div>
-  </nav>
+    </nav>
+</div>
+<script src="function.js"></script>
 </body>
 </html>
