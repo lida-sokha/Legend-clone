@@ -318,7 +318,7 @@ form select option{
     align-items: center; /* Center vertically */
     margin: 0 auto; /* Center the container itself */
     overflow: hidden;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .auto-slider {
@@ -332,7 +332,7 @@ form select option{
 .auto-slider_content {
     display: flex; /* Align items in a row */
     justify-content: flex-start; /* Items flow from the start */
-    align-items: center; /* Vertically center content */
+    align-items: center;
     gap: 0; /* No extra space between items */
     padding: 0;
     margin: 0;
