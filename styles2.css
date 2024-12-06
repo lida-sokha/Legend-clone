@@ -1,0 +1,104 @@
+/* 
+.page-3{
+    
+        background: linear-gradient(
+          to left,
+        #000000,   
+        #3b0000,   
+        #000000     
+        );
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh; 
+     
+
+    color: white;
+    font-family: "Arial", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+   
+   
+} */
+.page-3 {
+    width: 100%;
+    padding: 20px;
+    background-color: #ddd; /* Example background color */
+    color: #333; /* Example text color */
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px; /* Adds spacing between page-2 and page-3 */
+}
+.section-1{
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    display: flex;  
+    gap: 2.25rem; 
+    margin-bottom: 40px;
+}
+button{
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: rgb(29, 26, 26);
+    display: inline-block;
+    border: none;
+}
+.section-2{
+    display: flex;
+   gap: 1.5rem;
+   cursor: pointer;
+   margin-bottom: 55px;
+    
+}
+ p{
+    color: rgb(178, 176, 176);
+}
+.box1, h3{
+    text-align: center;
+}
+.box1{
+    border: 1px solid red;
+    padding: 8px 60px 8px 60px;
+    border-radius: 10px;
+
+}
+.box{
+    border: 1px solid gray;
+}
+.box:hover{
+    border:1px solid white;
+}
+.section-3{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    
+    
+}
+@media (max-width:540px){
+    .box1{
+        padding:8px ;
+    }
+    .section-3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.image{
+    margin-bottom: 30px; 
+}
+.img{
+    width: 90%;
+    border-radius: 10px;
+}
+.G1{
+    display: flex;
+    gap:7px ;   
+    padding-top: 15px;
+}
+.para{
+    color: white;
+    padding-top:15px;
+}
