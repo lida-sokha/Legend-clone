@@ -49,18 +49,6 @@ body, html{
         transform: translateX(-1000%);
     }
 }
-/* General Reset */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #181818;
-    color: #fff;
-}
 header{
     margin-left: auto;
     margin-right: auto;
@@ -190,95 +178,121 @@ form select option{
 }
 
 /* Selected option display */
-.dropdown-selected {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    color: #fff;
-    border-radius: 5px;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Language Switcher Container */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    z-index: 0;
+}
+
+/* Dropdown Container */
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
     cursor: pointer;
 }
 
-/* Icon styling */
-.dropdown-selected .icon {
-    width: 20px;
-    height: auto;
-    margin-right: 10px;
-}
-/* language */
-/* Dropdown options */
-.dropdown-options {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: black;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    z-index: 10;
+/* Selected Option */
+.dropdown-selected1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    transition: background-color 0.3s ease;
 }
 
+/* Hover Effect for Selected Option */
+.dropdown-selected1:hover {
+    background-color: #444;
+}
+
+/* Flag Icon */
+.icon {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* Dropdown Options */
+.dropdown-options {
+    display: none; /* Initially hidden */
+    position: relative;
+    top: 110%; /* Below the selected option */
+    left: 0;
+    color: white;
+    width: 150px;
+    background-color:black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    list-style: none;
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+/* Show Dropdown on Hover */
+.custom-dropdown:hover .dropdown-options {
+    display: block;
+    z-index: 1;
+}
+
+/* Dropdown Items */
 .dropdown-options li {
     display: flex;
     align-items: center;
-    padding: 10px;
-}
-
-.dropdown-options label {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
+    gap: 8px;
+    padding: 8px 15px;
+    color: white;
     cursor: pointer;
-    color: #fff;
+    transition: background-color 0.3s ease;
 }
 
-.dropdown-options label:hover {
-    background-color: #555;
+.dropdown-options li:target {
+    position: fixed;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    /* width: auto; */
+}
+.dropdown-options li:hover{
+    background-color: red;
+}
+/* Divider Line */
+.dropdown-options hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 5px 0;
 }
 
-/* Icon styling in dropdown options */
-.dropdown-options .icon {
-    width: 20px;
-    height: auto;
-    margin-right: 10px;
-}
-
-/* Make dropdown visible when checked */
-.custom-dropdown:hover .dropdown-options {
-    display: block;
-}
-
-/* Hide radio buttons */
-.dropdown-options input[type="radio"] {
-    display: none;
-}
-
-/* Navigation Bar */
 .navbar {
     display: flex;
     align-items: center;
+    justify-content: center; /* Center items horizontally */
     padding: 10px 0;
-    margin-top: 10px;
-    align-items: center;
+    margin: 0; /* Remove auto margins */
     position: relative;
-    z-index: 10;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding-left: 125px;
-    padding-right: 155px;
+    z-index: 1;
+    width: 100%; /* Ensure full width */
+    background-color: rgba(0, 0, 0, 0.8); /* Set background color */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 0; /* Remove border-radius for a full-width look */
 }
-.navbar,
-.container {
-    margin: 0;
-    padding: 0;
-}
+
 .nav-link {
     display: flex;
     align-items: center;
@@ -288,19 +302,22 @@ form select option{
     font-size: 16px;
     transition: color 0.3s;
 }
-.nav-link i{
+
+.nav-link i {
     margin-right: 8px;
 }
+
 .nav-link img {
-    height: 20px; 
+    height: 20px;
     width: auto;
     margin-right: 8px;
 }
+
 /* Style the dropdown container */
 .dropdown {
     position: relative;
     font-family: Arial, sans-serif;
-    width: 100px;
+    width: auto;
     background-color: #333;
     border-radius: 5px;
     overflow: hidden;
@@ -316,7 +333,7 @@ form select option{
     border-radius: 5px;
     display: flex;
     align-items: center;
-    width: 15%;
+    width:20%;
     cursor: pointer;
     margin-left: 640px;
 }
@@ -333,9 +350,8 @@ form select option{
     display: none;
     position: absolute;
     background-color: #444;
-    min-width: 20%;
+    min-width: 30%;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
     margin-top: 5px;
     border-radius: 5px;
     margin-left: 640px;
@@ -377,10 +393,10 @@ form select option{
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    z-index: 1; 
     width: 70%; 
     height: auto;
     display: flex;
+    z-index: -1;
     justify-content: center; 
     align-items: center;
     overflow: hidden; 
