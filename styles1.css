@@ -6,6 +6,16 @@ body, html{
     overflow:  auto;
     font-family: Arial, sans-serif;
 }
+.blur-background{
+    position: fixed;  /* Fixed position to keep it in place during scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Height is set to the viewport height */
+    z-index: -1; /* Ensures it stays behind everything else */
+    background-color: black;
+    overflow: hidden;
+}
 .auto-slider_content {
     display: flex; /* Align items in a row */
     /* width: calc(100% * 10); set the total width for the slides */
@@ -15,6 +25,7 @@ body, html{
     animation: slide 50s steps(10) infinite;
     margin: 0;
     padding: 0;
+    width: 100vw;
     position: relative;
     list-style: none;
 }
@@ -40,16 +51,7 @@ body, html{
         transform: translateX(-1000%);
     }
 }
-.blur-background{
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -1;
-    background-color: black;
-}
+
 .header-left{
     position: relative;
     display:flex;
@@ -235,7 +237,12 @@ form select option{
 .navbar {
     display: flex;
     justify-content: flex-start;
+    /* width: 100%; */
+    position: fixed;
+    top: 80px; /* Adjust based on the header height */
+    left: 0;
     width: 100%;
+    z-index: 9; /* Below the header */
     padding-left: 10%;
     background-color: rgba(0, 0, 0, 0.4); 
     backdrop-filter: blur(5px); /* Optional blur effect */
@@ -405,12 +412,17 @@ form select option{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 10px 20px;
+    top: 0; /* Aligns it to the top */
+    left: 0; /* Aligns it to the left */
     /* background-color: #222; */
     background-color: rgba(0, 0, 0, 0.4); 
     backdrop-filter: blur(5px); /* Optional blur effect */
     -webkit-backdrop-filter: blur(5px); /* For Safari */
     color: #fff;
+    position: absolute;
+    z-index: 100;
 }
 
 .container {
@@ -420,6 +432,8 @@ form select option{
     width: 90%;
     padding-left: 5%;
     margin: 0;
+    position: relative;
+    z-index: 1; 
 }
 .header-left {
     display: flex;
@@ -511,43 +525,48 @@ form select option{
 }
 
 .page-2 {
-    position:absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    width: 70%; 
-    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%; /* Adjust width as per your design */
+    height: 70vh; /* Full viewport height */
     display: flex;
-    z-index: -1;
-    justify-content: center; 
+    margin-left: 15%;
+    margin-top: 10%;
+    justify-content: center;
     align-items: center;
-    overflow: hidden; 
-    border-radius: 15px; 
-    margin-top: 70px;
+    overflow: hidden; /* Hide overflow content */
+    border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for emphasis */
+    z-index: 1;
 }
+
 .auto-slider_Content1 {
-    display: flex; /* Align items in a row */
-    height: 100%;
-    width: 200%;
+    display: flex;
+    height: 100%; /* Full height of the parent container */
+    width: 100%;
     transition: transform 0.5s ease;
-    animation: slide 50s steps(10) infinite;
+    animation: slide 50s steps(10) infinite; /* Adjust the animation speed to your preference */
+    position: absolute;
     margin: 0;
     padding: 0;
     list-style: none;
+    top: 0;
+    left: 0;
 }
+
 .auto-slider_Content1 li {
-    flex: 0 0 100%;
-    margin: 0;
-    padding: 0;
+    flex: 0 0 100%; /* Each item takes full width of the container */
+    height: 100vh; /* Full viewport height */
     list-style: none;
 }
 
 .auto-slider_Content1 img {
-    width: 100%; /* Cover the entire container */
-    height: 100%; /* Maintain full height */
-    object-fit: cover; /* Prevent distortion */
+    width: 100%; /* Ensure the image covers the entire container */
+    height: 70vh; /* Maintain full height */
+    object-fit: cover; /* Prevent distortion and cover the area */
 }
+
 
 /* Keyframes for the sliding animation */
 @keyframes slide-left {
@@ -558,6 +577,7 @@ form select option{
         transform: translateX(-100%);
     }
 }
+
 @media (max-width: 480px) {
     .header {
         display: flex;
