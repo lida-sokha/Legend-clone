@@ -767,6 +767,22 @@ form select option{
     .custom-dropdown:hover .dropdown-content {
         display: block;
     }
+    
+}
+@media screen and (max-width: 540px) {
+    .auto-slider_content {
+        animation: none;  /* Remove the animation on smaller screens */
+        height: 20vh;
+    }
 
+    .auto-slider_content li {
+        height: 20vh; /* Reduce the height for smaller screens */
+    }
+
+    .auto-slider_content img {
+        width: 100%;
+        height: 40vh;
+        object-fit: contain; /* Ensure the image is resized properly without distortion */
+    }
 }
 
