@@ -13,7 +13,7 @@
 /* Content Section (without blur) */
 .content-section {
     position: relative;
-    z-index: 1;  /* Ensure it's above the blur background */
+    z-index: 2;  /* Ensure it's above the blur background */
     padding: 20px;
     background: linear-gradient(
         to left,
@@ -104,6 +104,14 @@ button{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
+    .blur-background, .page-2 {
+        height: 50vh; /* Further shrink height on very small screens */
+    }
+
+    .auto-slider_content img,
+    .auto-slider_Content1 img {
+        width: 70%; /* Make images even smaller for tiny devices */
+    }
 }
 .image{
     margin-bottom: 30px; 
@@ -120,4 +128,23 @@ button{
 .para{
     color: white;
     padding-top:15px;
+}
+@media (max-width: 480px) {
+    .blur-background, .page-2 {
+        height: 40vh; /* Shrink height for phones */
+    }
+
+    .auto-slider_content img,
+    .auto-slider_Content1 img {
+        width: 65%; /* Reduce size of images for phone screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .auto-slider_content {
+        filter: blur(5px); /* Slightly reduce blur effect for smaller screens */
+    }
+
+    .auto-slider_Content1 img {
+        max-width: 300px; /* Restrict the maximum size */
+    }
 }
