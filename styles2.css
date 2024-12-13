@@ -98,38 +98,7 @@ button{
     
     
 }
-.container-anime {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    /* max-width: 800px; */
-}
-.container-anime h1{
-    margin-bottom: 40px;
-}
-.image-anime {
-    margin-left: 5%;
-    margin-right: 5%;
-    display: block;
-    width: 90%;
-    height: 50%;
-    border-radius: 10px;
-}
 
-.overlay {
-    position: absolute; 
-    bottom: 0; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: 100%;
-    transition: .5s ease;
-    opacity:1;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-}   
 @media (max-width:540px){
     .box1{
         padding:8px ;
@@ -137,14 +106,6 @@ button{
     .section-3{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-    }
-    .blur-background, .page-2 {
-        height: 50vh; /* Further shrink height on very small screens */
-    }
-
-    .auto-slider_content img,
-    .auto-slider_Content1 img {
-        width: 70%; /* Make images even smaller for tiny devices */
     }
 }
 .image{
@@ -162,24 +123,4 @@ button{
 .para{
     color: white;
     padding-top:15px;
-}
-
-@media (max-width: 480px) {
-    .blur-background, .page-2 {
-        height: 40vh; /* Shrink height for phones */
-    }
-
-    .auto-slider_content img,
-    .auto-slider_Content1 img {
-        width: 65%; /* Reduce size of images for phone screens */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    .auto-slider_content {
-        filter: blur(5px); /* Slightly reduce blur effect for smaller screens */
-    }
-
-    .auto-slider_Content1 img {
-        max-width: 300px; /* Restrict the maximum size */
-    }
 }
