@@ -347,6 +347,7 @@ form select option{
     display: flex; /* Flex layout for navigation items */
     align-items: center; /* Center align items vertically */
     backdrop-filter: blur(10px);
+    padding-left: 10%;
 }
 
 .nav-link1 {
