@@ -1,0 +1,628 @@
+
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0;
+    background-image: url('blur1.jpg'); /* Replace with your image path */
+    background-size: cover; /* Makes the image cover the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    overflow: hidden; /* Optional: Prevent scrolling */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    padding: 10px 20px;
+    top: 0; /* Aligns it to the top */
+    left: 0; /* Aligns it to the left */
+    /* background-color: #222; */
+    background-color: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(5px); /* Optional blur effect */
+    -webkit-backdrop-filter: blur(5px); /* For Safari */
+    color: #fff;
+    position: fixed;
+    z-index: 2;
+    }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding-left: 5%;
+    margin: 0;
+    position: relative;
+    /* z-index: 1;  */
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.header-left .search-bar {
+    border-radius: 30px;
+    border: none;
+    border: 1px solid gray;
+}
+.header-center {
+    flex: 1;
+    text-align: center;
+}
+
+.header-center .logo {
+    height: 40px;
+    margin-left: 15%;
+}
+
+.header-right {
+    display: flex;
+    padding: 0;
+    gap: 10px;
+    
+}
+.header-right .btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #fff;
+    width: 100px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s;
+    border-radius: 20px;
+    background-color:rgba(93, 83, 83, 0.792);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.header-right .btn img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Language Switcher */
+.language-switcher {
+    position: relative;
+}
+
+.language-switcher .custom-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.language-switcher .dropdown-options {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    color: #000;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.language-switcher:hover .dropdown-options {
+    display: block;
+}
+.search-bar {
+    flex: 1; /* Allow the input to grow and shrink as needed */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.fa-magnifying-glass {
+    font-size: 20px;
+    cursor: pointer;
+}
+.header-left .search-bar {
+    width: 100px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Optional blur effect */
+    -webkit-backdrop-filter: blur(5px); /* For Safari */
+    color: #fff;
+    font-size: 16px;
+    margin-left: 15%;
+} 
+.header-left .fa-magnifying-glass {
+    position: absolute;
+    top:50%;
+    left: 420px;
+    transform:translateY(-50%);
+    color: #fff;
+    font-size: 18px;
+    pointer-events: none;
+}
+.header-right .btn:hover {
+    background-color: #555;
+}
+
+.header-right .btn img {
+    height: 30px; /* Icon size */
+    margin-right: 8px;
+    margin-left: 5px;
+}
+
+.header-right .notification-btn .btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(40, 36, 36, 0.1);
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+}
+
+form select{
+    font-size:20px;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+form select option{
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    /* color: white; */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    
+}
+/* General styling */
+.language-switcher {
+    position: relative;
+    font-family: Arial, sans-serif;
+    width: 200px;
+}
+
+/* Language Switcher Container */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    z-index: 2;
+}
+
+/* Dropdown Container */
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Selected Option */
+.dropdown-selected1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    padding: 10px 15px;
+    margin-right: 50%;
+    border-radius: 10px;
+    /* border: 1px solid #444; */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Selected Option */
+.dropdown-selected1:hover {
+    background-color: #444;
+}
+
+/* Flag Icon */
+.icon {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* Dropdown Options */
+.dropdown-options {
+    display: none; /* Initially hidden */
+    position: relative;
+    top: 110%; /* Below the selected option */
+    left: 0;
+    color: white;
+    width: 150px;
+    background-color:black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    list-style: none;
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+/* Show Dropdown on Hover */
+.custom-dropdown:hover .dropdown-options {
+    display: block;
+    z-index: 1;
+}
+
+/* Dropdown Items */
+.dropdown-options li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-options li:target {
+    position: fixed;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    /* width: auto; */
+}
+.dropdown-options li:hover{
+    background-color: red;
+
+}
+/* Divider Line */
+.dropdown-options hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 5px 0;
+}
+/* navigation */
+.navbar {
+    position: fixed; /* Fix to the viewport */
+    left: 0; /* Align to the left edge */
+    width: 100%; /* Full width */
+    top:62px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 10px 0; /* Add padding for touch interaction */
+    display: flex; /* Flex layout for navigation items */
+    align-items: center; /* Center align items vertically */
+    backdrop-filter: blur(10px);
+    padding-left: 10%;
+}
+
+.nav-link1 {
+    display: flex;
+    align-items: center;
+    margin: 0 15px; /* Fix margin values */
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-link1 i {
+    margin-right: 8px;
+}
+.nav-link2 {
+    display: flex;
+    align-items: center;
+    margin: 0 15px; /* Fix margin values */
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-link2 i {
+    margin-right: 8px;
+}
+.nav-link img {
+    height: 20px;
+    width: auto;
+    margin-right: 8px;
+}
+.nav-link3 {
+    display: flex;
+    align-items: center;
+    margin: 0 15px; /* Fix margin values */
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-link3 i {
+    margin-right: 8px;
+}
+.nav-link4 {
+    display: flex;
+    align-items: center;
+    margin: 0 15px; /* Fix margin values */
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-link4 i {
+    margin-right: 8px;
+}
+
+.nav-button {
+    display: none;
+    align-items: center;
+    margin: 0 15px; /* Fix margin values */
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-link3 i {
+    margin-right: 8px;
+}
+.custom-dropdown1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Ensures the dropdown is aligned to the right */
+    margin-left: 40%;
+}
+.custom-dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Ensures the dropdown is aligned to the right */
+    margin-left: 30%;
+}
+/* Style the dropdown container */
+.dropdown {
+    position: relative;
+    font-family: Arial, sans-serif;
+    width: auto;
+    background-color: #333;  
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 640px;
+}
+
+/* Style the dropdown button */
+.dropdown-btn {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width:100%;
+    cursor: pointer;
+}
+
+/* Style the image inside the dropdown button */
+.dropdown-btn .dropdown-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:black;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    margin-top: 400px;
+    border-radius: 5px;
+    z-index: 1;
+    margin-left: 640px;
+}
+/* Style the dropdown items */
+.dropdown-item {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Style the images inside the dropdown items */
+.dropdown-item .dropdown-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Change background on hover */
+.dropdown-item:hover {
+    background-color: #555;
+}
+
+/* Display dropdown when hovering over the container */
+.custom-dropdown1:hover .dropdown-content {
+    display: block;
+    margin-top: 500px;
+}
+
+/* Change background of the button when hovered */
+.custom-dropdown:hover .dropdown-btn {
+    background-color: #555;
+}
+/* Container */
+.container {
+    display: flex;
+    position: absolute;
+    border-radius: 20px;
+    overflow: hidden; /* Ensures content respects the border radius */
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 80%;
+    box-shadow: 0px 4px 10px rgba(255, 253, 253, 0.2); /* Optional for styling */
+ }
+.ticket{
+    display: none;
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('login-banner.png'); /* Combine gradient and image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-size: 30px; 
+}
+
+
+.overlay-text {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+   
+}
+
+.guest-link {
+    font-size: 24px;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+    display: flex;
+    /* background: linear-gradient(to bottom, #0c1b29, #0e1f33); */
+}
+
+.form-container {
+    width: 80%;
+    max-width: 400px;
+    /* text-align: center; */
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    margin-left: 45px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    text-align: left;
+    font-size: 37px;
+}
+
+.login-text {
+    color: #777;
+}
+
+.signup-text {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+.white-label {
+    color: rgb(164, 163, 163);
+    margin-left: 45px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    display: block; /* Add this */
+}
+
+/* Container for the phone input */
+.phone-input {
+    display: flex;
+    align-items: center;
+    margin-left: 45px; /* Your desired margin */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 15px; /* Space inside the box */
+    background-color: rgba(0, 0, 0, 0.4); /* Slight background transparency */
+    color: white; /* Text color */
+    width: 300px; /* Match the button's width */
+}
+
+/* Country flag image */
+.phone-input .flag-img {
+    margin-right: 5px; /* Space between flag image and country code */
+    width: 20px; /* Set a width for the flag image */
+    height: 20px; /* Set a height for the flag image */
+}
+
+/* Country code text */
+.phone-input .country-code {
+    margin-right: 10px; /* Space between country code and input field */
+    color: white; /* White color for the country code */
+    font-size: 16px; /* Adjust font size if necessary */
+}
+
+/* Input field */
+.phone-input input {
+    border: none; /* Remove default border */
+    outline: none; /* Remove focus outline */
+    background: transparent; /* Transparent background */
+    color: white; /* Text color */
+    font-size: 16px;
+    flex: 1; /* Take the remaining space */
+    width: 100%; /* Ensure it stretches the full width of the container */
+}
+
+/* Placeholder text color */
+.phone-input input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Light white color */
+}
+
+/* Continue button */
+.continue-btn {
+    display: block;
+    margin: 20px 45px; /* Top and bottom, then left margin */
+    padding: 15px 0;
+    width: 85%; /* Make the button take the full width of the container */
+    background-color: #6c6c6c; /* Gray background */
+    color: white; /* Text color */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none; /* Remove default border */
+    border-radius: 30px; /* Rounded button */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for button */
+.continue-btn:hover {
+    background-color: #5a5a5a; /* Darker gray on hover */
+}

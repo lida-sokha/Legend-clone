@@ -1080,6 +1080,9 @@ button{
 .image{
     margin-bottom: 30px; 
 }
+.image a{
+    text-decoration: none;
+}
 .img{
     width: 90%;
     border-radius: 10px;
@@ -1089,7 +1092,16 @@ button{
     gap:7px ;   
     padding-top: 15px;
 }
+.G1 a{
+    display: flex;
+    gap:7px ;   
+    padding-top: 15px;
+}
 .para{
+    color: white;
+    padding-top:15px;
+}
+.para a{
     color: white;
     padding-top:15px;
 }

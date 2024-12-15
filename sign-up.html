@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legend Cinema Sign Up</title>
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+    <div class="blur-background">
+        <header class="header">
+            <div class="container">
+        <div class="header-center">
+            <a href="Home.html">
+            <img src="./img/legend-cinema-logo.png" alt="logo" class="logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <div class="custom-dropdown">
+                    <div class="dropdown-selected1">
+                        <img src="./img/flage-b.png" alt="EN Flag" class="icon">
+                        <span>EN</span>
+                    </div>
+                    <ul class="dropdown-options">
+                        <li data-value="EN">
+                            <img src="./img/flage-b.png" alt="EN Flag" class="icon">
+                            English
+                        </li>
+                        <hr>
+                        <li data-value="KH">
+                            <img src="./img/khmer-flage.png" alt="Khmer Flag" class="icon">
+                            Khmer
+                        </li>
+                        <hr>
+                        <li data-value="CH">
+                            <img src="./img/c-removebg-preview.png" alt="China Flag" class="icon">
+                            中国人
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>  
+    </div>
+<!-- </header> -->
+</header>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <img src="login-banner.png" style="width: 40px; height: 100vh;">
+            <div class="overlay-text">
+                <a href="#" class="guest-link">Continue as Guest</a>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="form-container">
+                <h2>
+                    <span class="login-text">Log In</span> | 
+                    <span class="signup-text">Sign Up</span>
+                </h2>
+                <p>Enter your phone number to get verification code</p>
+                <form>
+                    <label class="white-label" for="phone-number">Phone Number</label>
+                    <div class="phone-input">
+                        <!-- Flag image and country code side by side -->
+                        <img src="flag.png" class="flag-img" alt="Country Flag" />
+                        <span class="country-code">+855</span>
+                        <input type="text" id="phone-number" placeholder="Enter your phone number">
+                    </div>
+                    <button type="submit" class="continue-btn">Continue</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
