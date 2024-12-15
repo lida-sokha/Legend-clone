@@ -1,0 +1,230 @@
+body{
+    background: linear-gradient(
+          to left,
+          #000000,   
+          #3b0000,   
+          #000000     
+        );
+        color: white;
+    margin-left: 15%; 
+    margin-right: 15%;
+    font-family: Arial, sans-serif;
+}
+.first {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column; 
+    gap: 5px; 
+}
+
+.line-group {
+    display: flex; 
+    align-items: center;
+    gap: 5px; 
+}
+
+.line-group a {
+    font-weight: bold;
+}
+
+.first > span {
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+
+
+a{
+    color: rgb(99 99 99);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 100;
+
+}
+a:hover{
+    color: white;
+    font-weight: 600;
+}
+.second{
+    margin-bottom: 25px;
+}
+body>p{
+    
+    margin-bottom: 35px;
+}
+img{
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.last{
+    line-height: 1.1;
+    font-size: 0.7rem;
+    font-weight: 600;
+    
+}
+/* .para{
+    line-height: 0.9rem;
+    font-weight: 600;
+} */
+.footer {
+    background-color: #000;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+  }
+  .buton-1{
+    padding: 30px;
+    width: 100%;
+    color: white;
+  }
+  .buton-1 p{
+    margin-left: 45%;
+    color: white;
+  }
+  .footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+  
+  .footer-section h3,
+  .footer-section h2 {
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+    padding-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: gray;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #fff;
+  }
+  
+  .app-icons img,
+  .social-icons img {
+    width: 40px;
+    margin-right: 10px;
+    border: solid white;
+    border-radius: 25px;
+  }
+  
+  .app-icons img:hover,
+  .social-icons img:hover,
+  .payment-icons img:hover {
+    opacity: 0.8;
+  }
+  
+  .footer-section .app-icons,
+  .footer-section .social-icons,
+  .footer-section .payment-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .payment-section {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    width: 100%; /* Spans full width to maintain alignment */
+  }
+  
+  .payment-section h3 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .payment-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjusts space between the icons */
+    margin-top: 10px;
+    width: 100%; /* Make it flexible for smaller screens */
+  }
+  
+  .payment-icons img {
+    height: 50px; /* Set consistent size for the icons */
+    width: auto;
+  }
+@media(max-width:540px){
+    h1{
+        font-size:18px ;
+    }
+    body{
+        margin-left: 5%; 
+        margin-right: 5%;
+    }
+    .footer {
+        margin-top: -300px;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .footer-section {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+    
+    .payment-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .app-icons img,
+    .social-icons img {
+        width: 35px;
+        margin: 5px;
+      }
+    
+      .payment-icons img {
+        width: 100px; /* Smaller size for mobile */
+        height: auto;
+      }
+    .auto-slider_content img{
+        display: none;
+    }
+    .section-1{
+        margin: 0;
+        width: 400px;
+        font-size: 12px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 30px;
+        margin-left: -15px;
+    }
+    .section-1 button{
+        border-radius: 20px;
+        width: 300px;
+    }
+    .bt-1{
+        background-color: red;
+    }
+    .buton-1{
+        padding: 30px;
+        width: 100%;
+        color: white;
+        margin-left: -25%;
+      }
+      .buton-1 p{
+        width: 60%;
+      }
+}

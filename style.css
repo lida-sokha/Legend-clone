@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background-color: #000;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h3,
+.footer-section h2 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  padding-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.app-icons img,
+.social-icons img {
+  width: 40px;
+  margin-right: 10px;
+  border: solid white;
+  border-radius: 25px;
+}
+
+.app-icons img:hover,
+.social-icons img:hover,
+.payment-icons img:hover {
+  opacity: 0.8;
+}
+
+.footer-section .app-icons,
+.footer-section .social-icons,
+.footer-section .payment-icons {
+  display: flex;
+  align-items: center;
+}
+
+.payment-section {
+  text-align: left;
+  margin-top: 20px;
+  width: 100%; /* Spans full width to maintain alignment */
+}
+
+.payment-section h3 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.payment-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adjusts space between the icons */
+  margin-top: 10px;
+  width: 100%; /* Make it flexible for smaller screens */
+}
+
+.payment-icons img {
+  height: 50px; /* Set consistent size for the icons */
+  width: auto;
+}
+
+/* Responsive Styles */
+/* @media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+  .payment-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .app-icons img,
+  .social-icons img {
+    width: 35px;
+    margin: 5px;
+  }
+
+  .payment-icons img {
+    width: 100px; 
+    height: auto;
+  }
+} */
+
+@media (max-width: 480px) {
+  .footer-section h3,
+  .footer-section h2 {
+    font-size: 14px;
+  }
+
+  .footer-section ul li {
+    font-size: 12px;
+  }
+
+  .app-icons img,
+  .social-icons img {
+    width: 30px;
+    margin: 5px;
+  }
+
+  .payment-icons img {
+    width: 100px;
+    height: auto;
+  }
+}

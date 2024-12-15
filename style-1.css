@@ -1,53 +1,28 @@
-/* Blur background container */
-.blur-background {
-    position: fixed; /* Keep it fixed in place */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh; /* Full height of the viewport */
-    z-index: -1;  /* Ensure it's behind other elements */
-    background-color: rgba(0, 0, 0, 0.5);  /* Optional: Dark overlay */
-    backdrop-filter: blur(10px);  /* Apply the blur effect */
-}
-
-/* Content Section (without blur) */
-.content-section {
-    position: relative;
-    z-index: 2;  /* Ensure it's above the blur background */
-    padding: 20px;
-    background: linear-gradient(
-        to left,
-        #000000,   
-        #3b0000,   
-        #000000     
-    );
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 100vh; /* Ensure it covers the full viewport height */
-        margin: 0;
-    
-
-    color: white;
-    font-family: "Arial", sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-/* Optional: Style for each section */
-.content-section {
-    padding: 20px;
-    margin-top: 100vh; /* Push it down from the top */
-    padding-left: 11%;
-    padding-right:11%;
-}
-
-.another-section {
-    margin-top: 50px;  /* Additional space from the previous section */
-}
 *{
     margin: 0;
     padding: 0;
     
+}
+body{
+    
+        background: linear-gradient(
+          to left,
+          #000000,   
+          #3b0000,   
+          #000000     
+        );
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh; /* Ensure it covers the full viewport height */
+        margin: 0;
+      
+
+    color: white;
+   font-family: "Arial", sans-serif;
+   font-size: 1rem;
+   font-weight: 500;
+   
+   
 }
 .section-1{
     font-size: 2.5rem;
@@ -60,7 +35,7 @@ button{
     color: white;
     cursor: pointer;
     font-size: 1rem;
-    background-color: rgb(0, 0, 0,0.1);
+    background-color: rgb(29, 26, 26);
     display: inline-block;
     border: none;
 }
@@ -98,7 +73,6 @@ button{
     
     
 }
-
 @media (max-width:540px){
     .box1{
         padding:8px ;

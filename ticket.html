@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ticket.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ticket</title>
+</head>
+<body>
+    <div class="blur-background">
+        <header class="header">
+            <div class="container">
+            <div class="header-left">
+                <input type="text" placeholder="Search Movies..." class="search-bar">
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+            </div>
+        <div class="header-center">
+            <a href="Home.html">
+            <img src="./img/legend-cinema-logo.png" alt="logo" class="logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <!-- Ticket Button -->
+            <button class="btn ticket-btn" style="width: 120px;">
+                <img src="./img/ticket-Photoroom.png" alt="ticket" class="ticket">
+                <span>Ticket</span>
+            </button>
+        
+            <!-- Join Now Button -->
+            <button class="btn join-btn" style="width: 120px;">
+                <img src="./img/user1-removebg-preview.png" alt="join" class="join">
+                <span>Join Now</span>
+            </button>
+        
+            <!-- Notification Button -->
+            <button class="btn notification-btn" style="width: 40px;">
+                <img src="./img/image_2024-12-01_230020441-removebg-preview.png" alt="notification" class="notification">
+            </button>
+        
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <div class="custom-dropdown">
+                    <div class="dropdown-selected1">
+                        <img src="./img/flage-b.png" alt="EN Flag" class="icon">
+                        <span>EN</span>
+                    </div>
+                    <ul class="dropdown-options">
+                        <li data-value="EN">
+                            <img src="./img/flage-b.png" alt="EN Flag" class="icon">
+                            English
+                        </li>
+                        <hr>
+                        <li data-value="KH">
+                            <img src="./img/khmer-flage.png" alt="Khmer Flag" class="icon">
+                            Khmer
+                        </li>
+                        <hr>
+                        <li data-value="CH">
+                            <img src="./img/c-removebg-preview.png" alt="China Flag" class="icon">
+                            中国人
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>  
+    </div>
+<!-- </header> -->
+    <nav class="navbar">
+    <a href="Home.html" class="nav-link3 active">
+        <i class="fa-solid fa-house" style="color: #fafafa;"></i>
+        <span>Home</span></a>
+    <a href="cinemas.html" class="nav-link1">
+        <i class="fa-solid fa-location-dot" style="margin-top: 5px;"></i>Cinemas</a>
+    <a href="3.HTML" class="nav-link2">
+        <i class="fa-solid fa-tag fa-flip-horizontal" style="color: #ffffff;"></i>Offers</a>
+    <a href="#" class="nav-link4">
+        <img src="./img/pop-corn (1).png" style="width: 17px;"> F&B</a>
+    <a href="#" class="nav-button">
+        <img src="./img/more.png"> More
+    </a>
+        <div class="custom-dropdown1">
+            <button class="dropdown-btn">
+                <img src="./img/placeholder.png" alt="Location" class="dropdown-icon"> All Cinema
+            </button>
+            <div class="dropdown-content">
+                <a href="#" class="dropdown-item">
+                    <img src="./img/placeholder.png" alt="Cinema" class="dropdown-icon"> Legend Cinema 271 Mega Mall
+                </a>
+                <hr>
+                <a href="#" class="dropdown-item">
+                    <img src="./img/placeholder.png" alt="Sihanouk" class="dropdown-icon"> Legend Cinema Sihanoukville
+                </a>
+                <hr>
+                <a href="#" class="dropdown-item">
+                    <img src="./img/placeholder.png" alt="Eden" class="dropdown-icon"> Legend Eden Garden
+                </a>
+                <hr>
+                <a href="#" class="dropdown-item">
+                    <img src="./img/placeholder.png" alt="K Mall" class="dropdown-icon"> Legend K Mall
+                </a>
+                <hr>
+                <a href="#" class="dropdown-item">
+                    <img src="./img/placeholder.png" alt="K Mall" class="dropdown-icon"> Legend Meanchey
+                </a>
+                <hr>
+                <a href="#" class="dropdown-item">
+                    <img src="./img/placeholder.png" alt="K Mall" class="dropdown-icon"> Legend Midtown Mall
+                </a>
+                <hr>
+                <a href="#" class="dropdown-item">
+                    <img src="./img/placeholder.png" alt="K Mall" class="dropdown-icon"> Legend Noro Mall
+                </a>
+                <hr>
+                <a href="#" class="dropdown-item">
+                    <img src="./img/placeholder.png" alt="K Mall" class="dropdown-icon"> Legend Olympia
+                </a>
+                <hr>
+                <a href="#" class="dropdown-item">
+                    <img src="./img/placeholder.png" alt="K Mall" class="dropdown-icon"> Legend Premium Exchange Square
+                </a>
+                <hr>
+                <a href="#" class="dropdown-item">
+                    <img src="./img/placeholder.png" alt="K Mall" class="dropdown-icon"> Legend SenSok
+                </a>
+                <hr>
+                <a href="#" class="dropdown-item">
+                    <img src="./img/placeholder.png" alt="K Mall" class="dropdown-icon"> Legend Siem Reap
+                </a>
+                <hr>
+                <a href="#" class="dropdown-item">
+                    <img src="./img/placeholder.png" alt="K Mall" class="dropdown-icon"> Legend Toul Kork
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="content-section">   
+    <div class="section-1">
+        <button class="bt-1"><h1>Upcoming</h1></button>
+        <button><h1>| History</h1></button>
+    </div>
+    <div class="ticket1">
+        <img src="ticket.png">
+    </div>
+    <footer class="footer">
+        <div class="footer-section">
+          <h3 style="font-size: 20px;">Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            
+            <li><a href="#">Contact Us</a></li>
+            
+            <li><a href="#">Cinemas</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-section">
+          <h3 style="font-size: 20px;">More</h3>
+          <ul>
+            <li><a href="#">Promotions</a></li>
+           
+            <li><a href="#">News & Activity</a></li>
+           
+            <li><a href="#">My Ticket</a></li>
+           
+            <li><a href="#">Terms & Conditions</a></li>
+          
+            <li><a href="#">Privacy & Policy</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-section">
+          <h2 style="font-size: 20px;">Download Our App</h2>
+          <div class="app-icons">
+            <a href="#"><img src="./img/playstore.png" alt="Google Play"></a>
+            <a href="#"><img src="./img/lol3.jpg" alt="App Store"></a>
+          </div>
+          <h2 style="font-size: 20px;">Follow Our Social Media</h2>
+          <div class="social-icons">
+            <a href="#"><img src="./img/f1.jpg" alt="Facebook"></a>
+            <a href="#"><img src="./img/c2.jpg" alt="Instagram"></a>
+            <a href="#"><img src="./img/d1.jpg" alt="YouTube"></a>
+            <a href="#"><img src="./img/e1.jpg" alt="TikTok"></a>
+            <a href="#"><img src="./img/f2.png" alt="Telegram"></a>
+          </div>
+        </div>
+        <div class="payment-section">
+            <h3 style="font-size: 20px;">Payment</h3>
+            <div class="payment-icons">
+              <img src="./img/abapayway.png" alt="ABA">
+              <img src="./img/visa-removebg-preview.png" alt="Visa">
+              <img src="https://logos-world.net/wp-content/uploads/2020/09/Mastercard-Logo.png" alt="MasterCard">
+            </div>
+          </div>
+          <hr style="width:100%">
+          <div class="buton-1">
+            <p>All right reserved ® 2023</p>
+        </div>
+      </footer>
+</body>
+</html>
