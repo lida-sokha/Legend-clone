@@ -1,0 +1,158 @@
+
+
+  /* body, html{
+    margin:0;
+    padding: 0;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+} */
+body{
+    background: linear-gradient(
+          to left,
+          #000000,   
+          #3b0000,   
+          #000000     
+        );
+        color: white;
+        font-family: Arial, sans-serif;
+
+        
+}
+/* .blur-background{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    background-color: black;
+} */
+
+  /* Blurred section container */
+  .blur-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Full-screen blurred background */
+  .blur-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://coolbeans.sgp1.digitaloceanspaces.com/legend-cinema-prod/5840e6b4-8923-4eee-894d-f98581885ad4.jpeg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+  }
+  
+  /* Centered image styling */
+  .centered-image img {
+    max-width: 100%;
+    max-height: 80vh;
+    height: auto;
+    width: auto;
+    z-index: 1;
+  }
+  
+  .centered-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .other-section {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .search-bar {
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(178, 176, 176);
+  }
+  .fa-solid {
+    padding-right: 15px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  .search-bar > p {
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+  h1 {
+    margin-bottom: 35px;
+    font-size: 38px;
+  }
+  /* Parent container styles */
+  .box {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    );
+    /* grid-template-columns: repeat(4,1fr); */
+    gap: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .box-1 {
+    background: #1a1a1a;
+    border-radius: 10px;
+    text-align: left;
+    padding: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  .img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .box-1 h4 {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .location {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: auto;
+  }
+  
+  .location i {
+    font-size: 1.2rem;
+    color: red;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .location span {
+    font-size: 1rem;
+    line-height: 1;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
