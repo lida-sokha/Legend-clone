@@ -57,14 +57,13 @@ body {
 
 .header-center .logo {
     height: 40px;
-    margin-left: 15%;
+    margin-left: 60%;
 }
 
 .header-right {
     display: flex;
     padding: 0;
     gap: 10px;
-    
 }
 .header-right .btn {
     display: flex;
@@ -574,6 +573,7 @@ form select option{
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    margin-left: 5%;
     flex-wrap: wrap;
   }
   .buton-1{
