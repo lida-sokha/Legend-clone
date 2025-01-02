@@ -534,15 +534,21 @@ form select option{
 }
 
 /* Centered image styling */
-.centered-image img {
+.centered-image  {
   max-width: 100%;
   max-height: 80vh;
   height: auto;
   width: auto;
   z-index: 1;
+  top: 140px;
   position: relative;
+  border-radius: 20px;
+  left: 220px;
 }
-
+.video-frame {
+  border-radius: 30px; /* Adjust the value for desired curvature */
+  overflow: hidden; /* Ensures the content stays within the rounded corners */
+}
 .centered-image img {
   width: 80%;
   height: auto;
